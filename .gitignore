@@ -21,7 +21,7 @@
 #/*
 !wp-content
 !wp-content/themes
-!wp-content/themes/e-trav
+#wp-content/themes/e-trav
 # Ignorer ces themes lorqu'on les push sur la repo distant
-wordpress-docker/wp-content/themes/twentynineteen/
-wordpress-docker/wp-content/themes/twentytwenty/
+!wordpress-docker/wp-content/themes/twentynineteen/
+!wordpress-docker/wp-content/themes/twentytwenty/
