@@ -1,0 +1,85 @@
+.full-nav-trigger {
+    display: block;
+    height: 80px;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 0;
+    width: 80px;
+    z-index: 999;
+}
+
+.full-nav-trigger span {
+    background: #000;
+    display: block;
+    height: 3px;
+    left: 50%;
+    margin-right: 15px;
+    position: absolute;
+    top: 50%;
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+    width: 28px;
+}
+
+.full-nav-trigger span:before, .full-nav-trigger span:after {
+    background: #000;
+    content: '';
+    height: 3px;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 50px;
+}
+
+.full-nav-trigger span:before {
+    top: -14px;
+}
+
+.full-nav-trigger span:after {
+    top: 14px;
+    width: 42px;
+}
+
+/*active*/
+.active span {
+    background: transparent;
+}
+
+.active span:before {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.active span:after {
+    transform: rotate(-45deg) translate(10px, -10px);
+    width: 50px;
+}
+
+.full-nav-close {
+    visibility: hidden;
+}
+
+.full-nav-open {
+    visibility: visible;
+}
+
+.full-nav-open #full-nav:after {
+    opacity: 1;
+    top: -50vh;
+    right: -25vw;
+    transition: all 5s ease-in-out 0s;
+}
+
+#full-nav:after {
+    background-color: #000;
+    background-image: url(../ressources-etravel/text.png);
+    content: '';
+    position: fixed;
+    opacity: 1;
+    height: 200vh;
+    top: -200vh;
+    right: -200vw;
+    width: 200vw;
+    border-radius: 100%;
+    z-index: -1;
+    transition: all .5s ease-in-out 0s;
+}

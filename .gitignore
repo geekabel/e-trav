@@ -1,5 +1,5 @@
 # Ignore everything in the root except the "wp-content" directory.
-/*
+
 # !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
@@ -23,5 +23,6 @@
 #!wp-content/themes
 #wp-content/themes/e-trav
 # Ignorer ces themes lorqu'on les push sur la repo distant
-wordpress-docker/wp-content/themes/twentynineteen/
-wordpress-docker/wp-content/themes/twentytwenty/
+#wp-content/themes/twentynineteen/
+/wp-content/themes/twentytwenty/
+/wordpress-default-file
